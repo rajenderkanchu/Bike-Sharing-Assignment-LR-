@@ -17,12 +17,25 @@ Which variables are significant in predicting the demand for shared bikes. How w
 
 We are required to model the demand for shared bikes with the available independent variables. It will be used by the management to understand how exactly the demands vary with different features. They can accordingly manipulate the business strategy to meet the demand levels and meet the customer's expectations. Further, the model will be a good way for management to understand the demand dynamics of a new market.
 
-**End Result:**
+
+
+**ASSUMPTIONS**
+
+Error terms are normally distributed with mean zero (not X, Y)
+Residual Analysis Of Training Data
+There is a linear relationship between X and Y
+There is No Multicollinearity between the predictor variables
+
+From the VIF calculation we could find that there is no multicollinearity existing between the predictor variables, as all the values are within permissible range of below 5
+
+**Results should be**
 
 As per our final Model, the top 3 predictor variables that influences the bike booking are:
 
 **Temperature (temp)** - A coefficient value of ‘0.5636’ indicated that a unit increase in temp variable increases the bike hire numbers by 0.5636 units.
+
 **Weather Situation 3 (weathersit_3)** - A coefficient value of ‘-0.3070’ indicated that, w.r.t Weathersit1, a unit increase in Weathersit3 variable decreases the bike hire numbers by 0.3070 units.
+
 **Year (yr)** - A coefficient value of ‘0.2308’ indicated that a unit increase in yr variable increases the bike hire numbers by 0.2308 units.
 So, it's suggested to consider these variables utmost importance while planning, to achive maximum Booking
 The next best features that can also be considered are
